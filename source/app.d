@@ -9,7 +9,7 @@ shared static this()
 	router.get("*", serveStaticFiles("public"));
 
 	auto settings = new HTTPServerSettings;
-	settings.port = 8080;
+	settings.port = 8010;
 	settings.bindAddresses = ["127.0.0.1"];
 	listenHTTP(settings, router);
 }
