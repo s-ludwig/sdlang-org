@@ -30,7 +30,7 @@ p { max-width: 40em; margin: 0 auto; margin-bottom: 24pt; }
 dl { text-align: left; max-width: 40em; margin: 0 auto; }
 dt { display: inline-block; float: left;}
 
-code { font-family: Consolas, Courier, monospace; }
+code { font-family: "Consolas", "Courier New", monospace; }
 code .tag { color: #D26; font-weight: bold; }
 code .str { color: #EA4; }
 code .num { color: #B7F;}
