@@ -1,0 +1,181 @@
+extends layout
+
+block head
+	title SDLang - Simple Declarative Language
+	link(rel="stylesheet", href="style.css")
+
+block body
+	h1 SDLang
+	h2 <em>S</em>imple <em>D</em>eclarative <em>Lang</em>uage
+
+	p SDLang is a simple and concise way to represent data. It has an XML-like structure &ndash;&nbsp;tags, values and attributes&nbsp;&ndash; which makes it a versatile choice for textual data representation, configuration files, and declarative languages. Its syntax is inspired by the C family of languages (C/C++, C#, D, Java, &hellip;).
+
+	pre
+		code.
+			<span class="cmt">// This is a node with a single string value</span>
+			<span class="tag">title</span> <span class="str">"Hello, World"</span>
+
+			<span class="cmt">// Multiple values are supported, too</span>
+			<span class="tag">bookmarks</span> <span class="num">12 15 188 1234</span>
+
+			<span class="cmt">// Nodes can have attributes</span>
+			<span class="tag">author</span> <span class="str">"Peter Parker"</span> <span class="att">email=</span><span class="str">"peter@example.org"</span> <span class="att">active=</span><span class="kwd">true</span>
+
+			<span class="cmt">// Nodes can be arbitrarily nested</span>
+			<span class="tag">contents</span> {
+				<span class="tag">section</span> <span class="str">"First section"</span> {
+					<span class="tag">paragraph</span> {
+						<span class="tag">text</span> <span class="str">"This is the first paragraph"</span>
+					}
+					<span class="tag">paragraph</span> {
+						<span class="tag">text</span> <span class="str">"This is the second paragraph"</span>
+					}
+				}
+			}
+
+			<span class="cmt">// Anonymous nodes are supported</span>
+			<span class="str">"This text is the value of an anonymous node!"</span>
+
+			<span class="cmt">// This makes things like matrix definitions very convenient</span>
+			<span class="tag">matrix</span> {
+				<span class="num">1 0 0</span>
+				<span class="num">0 1 0</span>
+				<span class="num">0 0 1</span>
+			}
+
+	h2 Implementations
+
+	ul.thumbs
+		li
+			a(href="https://github.com/ikayzo/SDL.NET")
+				img(src="images/net-logo.png", alt=".NET Logo", width=80, height=80)
+				.impl SDL.NET
+		li
+			a(href="https://github.com/ikayzo/SDL")
+				img(src="images/java-logo.png", alt="Java Logo", width=80, height=80)
+				.impl SDL
+		li
+			a(href="https://github.com/ikayzo/SDL.rb")
+				img(src="images/ruby-logo.png", alt="Ruby Logo", width=80, height=80)
+				.impl SDL.rb
+		li
+			a(href="https://github.com/Abscissa/SDLang-D/")
+				img(src="images/d-logo.png", alt="D Logo", width=107, height=80)
+				.impl SDLang-D
+
+
+	h2 Data types
+	pre
+		code.
+			<span class="cmt">// Strings</span>
+			<span class="str">"String \\"with escape support\\""</span>
+			<span class="str">`String "without escape support"`</span>
+			
+			<span class="cmt">// Numbers</span>
+			<span class="num">10</span> <span class="cmt">   // 32-bit integer
+			<span class="num">10.5</span> <span class="cmt"> // 64-bit float (double)</span>
+			<span class="num">10L</span> <span class="cmt">  // 64-bit integer</span>
+			<span class="num">10BD</span> <span class="cmt"> // 128-bit integer</span>
+			<span class="num">10.5f</span> <span class="cmt">// 32-bit float</span>
+
+			<span class="cmt">// Boolean and null values</span>
+			<span class="kwd">true</span> <span class="cmt"> // boolean true</span>
+			<span class="kwd">false</span> <span class="cmt">// boolean false</span>
+			<span class="kwd">on</span> <span class="cmt">   // boolean true</span>
+			<span class="kwd">off</span> <span class="cmt">  // boolean false</span>
+			<span class="kwd">null</span> <span class="cmt"> // a null value</span>
+
+			<span class="cmt">// Date/time formats</span>
+			<span class="num">2015/12/06 12:00:00.000-UTC</span> <span>// Date/time value (UTC timezone)</span>
+			<span class="num">2015/12/06 12:00:00.000</span> <span>    // Date/time value without time-zone</span>
+			<span class="num">2015/12/06</span> <span>                 // Date value</span>
+			<span class="num">12:14:34</span> <span class="cmt">    // Duration: 12 hours, 14 minutes, 34 seconds</span>
+			<span class="num">12:14:34.123</span> <span class="cmt">// 12 h, 14 min, 34 s, 123 ms</span>
+			<span class="num">2d:12:14:34</span> <span class="cmt"> // 2 days, 12 h, 14 min, 34 s</span>
+
+			<span class="cmt">// Binary data (Base64 encoded)</span>
+			<span class="tag">data</span> <span class="str">[sdf789GSfsb2+3324sf2]</str>
+
+
+	h2 Comment styles
+	pre
+		code.
+			<span class="cmt">// C++ style</span>
+			
+			<span class="cmt">/*
+			C style multiline
+			*/</span>
+
+			<span class="tag">tag</span> <span class="cmt">/*foo=true*/</span> <span class="att">bar=</span><span class="kwd">false</span>
+			
+			<span class="cmt"># Shell style</span>
+
+			<span class="cmt">-- Lua style</span>
+
+	h2 Syntax details
+	pre
+		code.
+			<span class="cmt">// Trailing semicolons are optional</span>
+			<span class="tag">title</span> <span class="str">"Some title"</span>;
+
+			<span class="cmt">// Semicolons can be used to separate multiple nodes</span>
+			<span class="tag">title</span> <span class="str">"Some title"</span>; <span class="tag">author</span> <span class="str">"Peter Parker"</span>
+
+			<span class="cmt">// Tags can contain a number of non-alphanumeric characters</span>
+			<span class="tag">this-is_a.valid$tag-name</span>
+
+			<span class="cmt">// Namespaces are supported</span>
+			<span class="tag">renderer:options</span> <span class="str">"invisible"</span>
+			<span class="tag">physics:options</span> <span class="str">"nocollide"</span>
+
+			<span class="cmt">// Tags can be split into multiple lines</span>
+			<span class="tag">title</span> \\
+				<span class="str">"Some title"</span>
+
+
+	h2 Tools
+
+	ul.links
+		li
+			a(href="http://sdl4r.rubyforge.org/syntaxhighlighter_brush.html") SDLang HTML syntax highlighter
+		li
+			a(href="https://packagecontrol.io/packages/SDLang") Syntax highlighting plug-in
+			| for 
+			a(href="http://www.sublimetext.com/") Sublime Text
+
+	h2 Who uses SDLang?
+
+	ul.thumbs
+		li
+			a(href="http://www.oracle.com/")
+				img(src="images/oracle.png", alt="Oracle logo")
+		li
+			a(href="http://www.bankofamerica.com/")
+				img(src="images/bank-of-america.png", alt="Bank of America logo")
+		li
+			a(href="http://www.ikayzo.com/")
+				img(src="images/ikayzo.png", alt="ikayzo logo")
+		li
+			a(href="http://code.dlang.org/")
+				img(src="images/dub.png", alt="DUB Logo")
+		li
+			a(href="http://sourceforge.net/projects/jtestframework/") JTest
+
+	h2 References
+
+	ul.links
+		li
+			a(href="http://sdl.ikayzo.org/display/SDL/Home") Official homepage
+			| (
+			a(href="http://semitwist.com/sdl-mirror/Home.html")> mirror
+			|)
+			
+		li
+			a(href="http://sdl.ikayzo.org/display/SDL/Language+Guide") Reference
+			| (
+			a(href="http://semitwist.com/sdl-mirror/Language+Guide.html")> mirror
+			|)
+		li
+			a(href="https://github.com/s-ludwig/sdlang-org/issues") Website issue tracker/Contact
+
+	.copy Copyright &copy; 2015, Sönke Ludwig. Distributed under the terms of the MIT license. All trademarks in this document are owned by their respective trademark holders.

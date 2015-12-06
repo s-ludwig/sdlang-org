@@ -1,0 +1,48 @@
+body {
+	text-align: center;
+	font-family: "Segoe UI", "Helvetica Neue", "Droid Sans", sans-serif;
+}
+
+h1, h2 { font-weight: lighter; }
+h1 { margin-top: 12pt; margin-bottom: 0; font-size: 60pt; color: #48D; text-shadow: #247 0 -1px 0; }
+h2 { margin-top: 36pt; }
+h1 + h2 { margin-top: 0; margin-bottom: 24pt; }
+
+h2 em { color: #48D; font-style: normal; font-weight: normal; }
+
+a { color: #44D; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+pre {
+	margin: 0 auto;
+	max-width: 40em;
+	padding: 8pt;
+	text-align: left;
+	border: 1px solid #000;
+	background-color: #222;
+	box-shadow: #aaa 0 10pt 40pt;
+	color: #ddd;
+	tab-size: 3;
+}
+
+p { max-width: 40em; margin: 0 auto; margin-bottom: 24pt; }
+
+dl { text-align: left; max-width: 40em; margin: 0 auto; }
+dt { display: inline-block; float: left;}
+
+code { font-family: Consolas, Courier, monospace; }
+code .tag { color: #D26; font-weight: bold; }
+code .str { color: #EA4; }
+code .num { color: #B7F;}
+code .kwd { color: #BE8;}
+code .att { color: #8AF;}
+code .cmt { color: #908880; }
+
+ul.links { list-style: none; padding: 0; }
+ul.thumbs { max-width: 40em; margin: 0 auto; padding: 0; }
+ul.thumbs li { list-style: none; display: inline-block; margin: 12pt 12pt; font-size: 22pt; }
+ul.thumbs li img { vertical-align: middle; }
+ul.thumbs li a { text-decoration: none; color: black; }
+
+.impl { display: none; }
+.copy { font-size: 75%; color: #bbb; margin-top: 24pt; }
