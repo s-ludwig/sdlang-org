@@ -90,7 +90,7 @@ block body
 
 			<span class="cmt">// Date/time formats</span>
 			<span class="num">2015/12/06 12:00:00.000-UTC</span> <span>// Date/time value (UTC timezone)</span>
-			<span class="num">2015/12/06 12:00:00.000</span> <span>    // Date/time value (local time-zone)</span>
+			<span class="num">2015/12/06 12:00:00.000</span> <span>    // Date/time value (local time)</span>
 			<span class="num">2015/12/06</span> <span>                 // Date value</span>
 			<span class="num">12:14:34</span> <span class="cmt">    // Duration: 12 hours, 14 minutes, 34 seconds</span>
 			<span class="num">12:14:34.123</span> <span class="cmt">// 12 h, 14 min, 34 s, 123 ms</span>
