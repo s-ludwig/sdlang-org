@@ -1,6 +1,7 @@
 body {
 	text-align: center;
 	font-family: "Segoe UI", "Helvetica Neue", "Droid Sans", sans-serif;
+	font-size: 11pt;
 }
 
 h1, h2 { font-weight: lighter; }
@@ -15,19 +16,19 @@ a:hover { text-decoration: underline; }
 
 pre {
 	margin: 0 auto;
-	max-width: 40em;
+	width: 400pt;
 	padding: 8pt;
 	text-align: left;
 	border: 1px solid #000;
 	background-color: #222;
-	box-shadow: #aaa 0 10pt 40pt;
+	box-shadow: #aaa 0 8pt 32pt;
 	color: #ddd;
 	tab-size: 3;
 }
 
-p { max-width: 40em; margin: 0 auto; margin-bottom: 24pt; }
+p { max-width: 500pt; margin: 0 auto; margin-bottom: 24pt; }
 
-dl { text-align: left; max-width: 40em; margin: 0 auto; }
+dl { text-align: left; max-width: 500pt; margin: 0 auto; }
 dt { display: inline-block; float: left;}
 
 code { font-family: "Consolas", "Courier New", monospace; }
@@ -39,7 +40,7 @@ code .att { color: #8AF;}
 code .cmt { color: #908880; }
 
 ul.links { list-style: none; padding: 0; }
-ul.thumbs { max-width: 40em; margin: 0 auto; padding: 0; }
+ul.thumbs { max-width: 500pt; margin: 0 auto; padding: 0; }
 ul.thumbs li { list-style: none; display: inline-block; margin: 12pt 12pt; font-size: 22pt; }
 ul.thumbs li img { vertical-align: middle; }
 ul.thumbs li a { text-decoration: none; color: black; }
