@@ -1,15 +1,30 @@
-body {
+﻿body {
 	text-align: center;
 	font-family: "Segoe UI", "Helvetica Neue", "Droid Sans", sans-serif;
 	font-size: 11pt;
+	line-height: 18pt;
+	margin: 0;
+	padding: 0;
+	padding-left: 2px;
+
+	background-image:
+		linear-gradient(rgba(255,255,255,0), #fff),
+		linear-gradient(#fff, #fff),
+		linear-gradient(#ddd 2px, transparent 2px),
+		linear-gradient(90deg, #ddd 2px, transparent 2px),
+		linear-gradient(#eee 1px, transparent 1px),
+		linear-gradient(90deg, #eee 1px, transparent 1px);
+	background-size: 100% 400pt, 100% 100%, 90pt 90pt, 90pt 90pt, 18pt 18pt, 18pt 18pt;
+	background-position: 0 0, 0 400pt, 50% 0pt, 50% 0, 50% 0, 50% 0;
+	background-repeat: no-repeat, no-repeat, repeat, repeat, repeat, repeat;
 }
 
 h1, h2 { font-weight: lighter; }
-h1 { margin-top: 12pt; margin-bottom: 0; font-size: 60pt; color: #48D; text-shadow: #247 0 -1px 0; }
-h2 { margin-top: 36pt; }
-h1 + h2 { margin-top: 0; margin-bottom: 24pt; }
+h1 { margin-top: 0pt; margin-bottom: 0; font-size: 60pt; color: #48D; text-shadow: #000 0 -1px 0; line-height: 84pt;}
+h2 { margin-top: 36pt; font-size: 18pt; line-height: 24pt;}
+h1 + h2 { margin-top: 1pt; margin-bottom: 18pt; }
 
-h2 em { color: #48D; font-style: normal; font-weight: normal; }
+h2 em { color: #48C; font-style: normal; font-weight: normal; }
 
 a { color: #44D; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -17,10 +32,13 @@ a:hover { text-decoration: underline; }
 pre {
 	margin: 0 auto;
 	width: 400pt;
-	padding: 8pt;
+	padding: 0 9pt;
+	line-height: 12pt;
 	text-align: left;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	background-color: #222;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1)), linear-gradient(to bottom right, #343434, #202020);
+	background-size: 100% 24pt, 100% 100%;
 	box-shadow: #aaa 0 8pt 32pt;
 	color: #ddd;
 	tab-size: 3; -o-tab-size: 3; -moz-tab-size: 3;
