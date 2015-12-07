@@ -24,12 +24,8 @@ block body
 			<span class="cmt">// Nodes can be arbitrarily nested</span>
 			<span class="tag">contents</span> {
 				<span class="tag">section</span> <span class="str">"First section"</span> {
-					<span class="tag">paragraph</span> {
-						<span class="tag">text</span> <span class="str">"This is the first paragraph"</span>
-					}
-					<span class="tag">paragraph</span> {
-						<span class="tag">text</span> <span class="str">"This is the second paragraph"</span>
-					}
+					<span class="tag">paragraph</span> <span class="str">"This is the first paragraph"</span>
+					<span class="tag">paragraph</span> <span class="str">"This is the second paragraph"</span>
 				}
 			}
 
