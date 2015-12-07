@@ -43,6 +43,14 @@ block body
 
 	ul.thumbs
 		li
+			a(href="https://github.com/Abscissa/SDLang-D/")
+				img(src="images/d-logo.png", alt="D Logo", width=107, height=80)
+				.impl SDLang-D
+		li
+			a(href="https://github.com/Palmik/HDJ")
+				img(src="images/haskell-logo.png", alt="Haskell Logo", width=113, height=80)
+				.impl HDJ
+		li
 			a(href="https://github.com/ikayzo/SDL.NET")
 				img(src="images/net-logo.png", alt=".NET Logo", width=80, height=80)
 				.impl SDL.NET
@@ -51,14 +59,13 @@ block body
 				img(src="images/java-logo.png", alt="Java Logo", width=80, height=80)
 				.impl SDL
 		li
+			a(href="https://github.com/noccylabs/php-sdl")
+				img(src="images/php-logo.png", alt="PHP Logo", width=115, height=80)
+				.impl SDLang-D
+		li
 			a(href="https://github.com/ikayzo/SDL.rb")
 				img(src="images/ruby-logo.png", alt="Ruby Logo", width=80, height=80)
 				.impl SDL.rb
-		li
-			a(href="https://github.com/Abscissa/SDLang-D/")
-				img(src="images/d-logo.png", alt="D Logo", width=107, height=80)
-				.impl SDLang-D
-
 
 	h2 Data types
 	pre
@@ -83,7 +90,7 @@ block body
 
 			<span class="cmt">// Date/time formats</span>
 			<span class="num">2015/12/06 12:00:00.000-UTC</span> <span>// Date/time value (UTC timezone)</span>
-			<span class="num">2015/12/06 12:00:00.000</span> <span>    // Date/time value without time-zone</span>
+			<span class="num">2015/12/06 12:00:00.000</span> <span>    // Date/time value (local time-zone)</span>
 			<span class="num">2015/12/06</span> <span>                 // Date value</span>
 			<span class="num">12:14:34</span> <span class="cmt">    // Duration: 12 hours, 14 minutes, 34 seconds</span>
 			<span class="num">12:14:34.123</span> <span class="cmt">// 12 h, 14 min, 34 s, 123 ms</span>
