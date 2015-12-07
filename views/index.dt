@@ -8,7 +8,7 @@ block body
 	h1 SDLang
 	h2 <em>S</em>imple <em>D</em>eclarative <em>Lang</em>uage
 
-	p SDLang is a simple and concise way to represent data. It has an XML-like structure &ndash;&nbsp;tags, values and attributes&nbsp;&ndash; which makes it a versatile choice for textual data representation, configuration files, and declarative languages. Its syntax is inspired by the C family of languages (C/C++, C#, D, Java, &hellip;).
+	p SDLang is a simple and concise way to textually represent data. It has an XML-like structure &ndash;&nbsp;tags, values and attributes&nbsp;&ndash; which makes it a versatile choice for data serialization, configuration files, or declarative languages. Its syntax was inspired by the C family of languages (C/C++, C#, D, Java, &hellip;).
 
 	pre
 		code.
