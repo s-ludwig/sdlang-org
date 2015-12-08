@@ -97,7 +97,7 @@ block body
 			<span class="num">2d:12:14:34</span> <span class="cmt"> // 2 days, 12 h, 14 min, 34 s</span>
 
 			<span class="cmt">// Binary data (Base64 encoded)</span>
-			<span class="tag">data</span> <span class="str">[sdf789GSfsb2+3324sf2]</str>
+			<span class="str">[sdf789GSfsb2+3324sf2]</str>
 
 
 	h2 Comment styles
