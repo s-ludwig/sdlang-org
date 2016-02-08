@@ -146,6 +146,10 @@ block body
 			a(href="https://packagecontrol.io/packages/SDLang") Syntax highlighting plug-in
 			| for 
 			a(href="http://www.sublimetext.com/") Sublime Text
+		li
+			a(href="https://github.com/Faianca/atom-sdlang") Syntax highlighting plug-in
+			| for 
+			a(href="https://atom.io/") Atom
 
 	h2 Who uses SDLang?
 
