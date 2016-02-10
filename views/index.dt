@@ -132,7 +132,7 @@ block body
 			<span class="tag">renderer:options</span> <span class="str">"invisible"</span>
 			<span class="tag">physics:options</span> <span class="str">"nocollide"</span>
 
-			<span class="cmt">// Tags can be separated into multiple lines</span>
+			<span class="cmt">// Nodes can be separated into multiple lines</span>
 			<span class="tag">title</span> \\
 				<span class="str">"Some title"</span>
 
