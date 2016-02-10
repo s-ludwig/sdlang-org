@@ -147,7 +147,7 @@ block body
 			| for 
 			a(href="http://www.sublimetext.com/") Sublime Text
 		li
-			a(href="https://github.com/Faianca/atom-sdlang") Syntax highlighting plug-in
+			a(href="https://atom.io/packages/sdlang") Syntax highlighting plug-in
 			| for 
 			a(href="https://atom.io/") Atom
 
