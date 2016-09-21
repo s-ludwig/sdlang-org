@@ -66,3 +66,5 @@ ul.thumbs li a { text-decoration: none; color: black; }
 
 .impl { display: none; }
 .copy { font-size: 75%; color: #bbb; margin-top: 24pt; }
+.footnotes { font-size: 75%; color: #bbb; }
+.footnote { font-size: 60%; vertical-align: super; }

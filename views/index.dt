@@ -151,7 +151,7 @@ block body
 			| for 
 			a(href="https://atom.io/") Atom
 
-	h2 Who uses SDLang?
+	h2 Who uses SDLang?#[a.footnote(href="#1")  1]
 
 	ul.thumbs
 		li
@@ -187,3 +187,5 @@ block body
 			a(href="https://github.com/s-ludwig/sdlang-org/issues") Website issue tracker/Contact
 
 	.copy Copyright &copy; 2015, Sönke Ludwig. Distributed under the terms of the MIT license. All trademarks in this document are owned by their respective trademark holders.
+
+	.footnotes #[span.footnote(id="1") 1] Information based in parts on the #[a(href="http://sdl.ikayzo.org/display/SDL/Projects+Using+SDL") SDL homepage] (#[a(href="http://semitwist.com/sdl-mirror/Projects+Using+SDL.html") mirror])
