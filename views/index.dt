@@ -179,10 +179,7 @@ block body
 			|)
 			
 		li
-			a(href="http://sdl.ikayzo.org/display/SDL/Language+Guide") Reference
-			| (
-			a(href="http://semitwist.com/sdl-mirror/Language+Guide.html")> mirror
-			|)
+			a(href="https://github.com/Abscissa/SDLang-D/wiki/Language-Guide") Reference
 		li
 			a(href="https://github.com/s-ludwig/sdlang-org/issues") Website issue tracker/Contact
 
