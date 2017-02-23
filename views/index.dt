@@ -72,7 +72,7 @@ block body
 	pre
 		code.
 			<span class="cmt">// Strings</span>
-			<span class="str">"String \\"with escape support\\""</span>
+			<span class="str">"String \"with escape support\""</span>
 			<span class="str">`String "without escape support"`</span>
 			
 			<span class="cmt">// Numbers</span>
@@ -133,7 +133,7 @@ block body
 			<span class="tag">physics:options</span> <span class="str">"nocollide"</span>
 
 			<span class="cmt">// Nodes can be separated into multiple lines</span>
-			<span class="tag">title</span> \\
+			<span class="tag">title</span> \
 				<span class="str">"Some title"</span>
 
 
