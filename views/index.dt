@@ -77,10 +77,11 @@ block body
 			
 			<span class="cmt">// Numbers</span>
 			<span class="num">10</span> <span class="cmt">   // 32-bit integer
-			<span class="num">10.5</span> <span class="cmt"> // 64-bit float (double)</span>
 			<span class="num">10L</span> <span class="cmt">  // 64-bit integer</span>
-			<span class="num">10BD</span> <span class="cmt"> // 128-bit integer</span>
+			<span class="num">10.5</span> <span class="cmt"> // 64-bit float (double)</span>
+			<span class="num">10.5d</span> <span class="cmt">// 64-bit float</span>
 			<span class="num">10.5f</span> <span class="cmt">// 32-bit float</span>
+			<span class="num">10.123BD</span> <span class="cmt"> // 128-bit decimal</span>
 
 			<span class="cmt">// Boolean and null values</span>
 			<span class="kwd">true</span> <span class="cmt"> // boolean true</span>
