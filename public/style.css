@@ -69,8 +69,9 @@ dl {
 	margin: 0 auto;
 	max-width: 400pt;
 }
-dl > dd { display: inline-block; }
-dl > dt { display: inline-block; }
+dl > dt { display: inline; margin: 0; }
+dl > dd { display: inline; margin: 0; }
+dl > dd:before { content: " – "; }
 
 .impl { display: none; }
 .copy { font-size: 75%; color: #bbb; margin-top: 24pt; }

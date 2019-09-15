@@ -67,11 +67,18 @@ block body
 			a(href="https://github.com/ikayzo/SDL.rb")
 				img(src="images/ruby-logo.png", alt="Ruby Logo", width=80, height=80)
 				.impl SDL.rb
+		li
+			a(href="https://github.com/araspik/sdlang.rs")
+				img(src="images/rust-logo.png", alt="Rust Logo", width=80, height=80)
+				.impl sdlang.rs
 
 	h3 More implementations
 	dl
 		dt: a(href="https://github.com/SingingBush/SDL") SingingBush/SDL
-		dd An up-to-date Java fork of the original SDL library
+		dd Up-to-date Java fork of the original SDL library
+	dl
+		dt: a(href="https://github.com/araspik/sdlangp") SDLangP
+		dd #[code @safe @nogc nothrow pure], Pegged based SDLang parser for D
 
 	h2 Data types
 	pre
