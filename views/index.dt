@@ -178,18 +178,20 @@ block body
 
 	ul.links
 		li
-			a(href="http://sdl.ikayzo.org/display/SDL/Home") Official homepage
+			a(href="https://github.com/Abscissa/SDLang-D/wiki/Language-Guide") Language Reference
+		li
+			a(href="https://github.com/s-ludwig/sdlang-org/issues") Website issue tracker/Contact
+		li
+			a(href="http://sdl.ikayzo.org/display/SDL/Home") Original homepage
 			| (
 			a(href="http://semitwist.com/sdl-mirror/Home.html")> mirror
 			|)
 			
 		li
-			a(href="http://sdl.ikayzo.org/display/SDL/Language+Guide") Reference
+			a(href="http://sdl.ikayzo.org/display/SDL/Language+Guide") Original Reference
 			| (
 			a(href="http://semitwist.com/sdl-mirror/Language+Guide.html")> mirror
 			|)
-		li
-			a(href="https://github.com/s-ludwig/sdlang-org/issues") Website issue tracker/Contact
 
 	.copy Copyright &copy; 2015, Sönke Ludwig. Distributed under the terms of the MIT license. All trademarks in this document are owned by their respective trademark holders.
 
