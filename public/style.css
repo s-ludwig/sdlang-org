@@ -19,7 +19,7 @@
 	background-repeat: repeat-x, repeat-x, repeat, repeat, repeat, repeat;
 }
 
-h1, h2 { font-weight: lighter; }
+h1, h2, h3 { font-weight: lighter; }
 h1 { margin-top: 0pt; margin-bottom: 0; font-size: 60pt; color: #48D; text-shadow: #000 0 -1px 0; line-height: 84pt;}
 h2 { margin-top: 36pt; font-size: 18pt; line-height: 24pt;}
 h1 + h2 { margin-top: 5pt; margin-bottom: 18pt; }
@@ -63,6 +63,14 @@ ul.thumbs { max-width: 500pt; margin: 0 auto; padding: 0; }
 ul.thumbs li { list-style: none; display: inline-block; margin: 12pt 12pt; font-size: 22pt; }
 ul.thumbs li img { vertical-align: middle; }
 ul.thumbs li a { text-decoration: none; color: black; }
+
+
+dl {
+	margin: 0 auto;
+	max-width: 400pt;
+}
+dl > dd { display: inline-block; }
+dl > dt { display: inline-block; }
 
 .impl { display: none; }
 .copy { font-size: 75%; color: #bbb; margin-top: 24pt; }

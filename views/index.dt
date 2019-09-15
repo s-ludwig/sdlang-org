@@ -68,6 +68,11 @@ block body
 				img(src="images/ruby-logo.png", alt="Ruby Logo", width=80, height=80)
 				.impl SDL.rb
 
+	h3 More implementations
+	dl
+		dt: a(href="https://github.com/SingingBush/SDL") SingingBush/SDL
+		dd An up-to-date Java fork of the original SDL library
+
 	h2 Data types
 	pre
 		code.
