@@ -160,6 +160,8 @@ block body
 			a(href="https://melpa.org/#/sdlang-mode") Major mode
 			| for 
 			a(href="https://www.gnu.org/software/emacs/") Emacs
+		li
+			a(href="https://github.com/s-ludwig/sdlang-org/files/2386492/sdlang.zip") Experimental VIM syntax file
 
 	h2 Who uses SDLang?#[a.footnote(href="#1")  1]
 
