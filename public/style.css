@@ -47,9 +47,6 @@ pre {
 
 p { max-width: 500pt; margin: 0 auto; margin-bottom: 24pt; }
 
-dl { text-align: left; max-width: 500pt; margin: 0 auto; }
-dt { display: inline-block; float: left;}
-
 code { font-family: "Consolas", "Courier New", monospace; }
 code .tag { color: #D26; font-weight: bold; }
 code .str { color: #EA4; }
@@ -68,9 +65,10 @@ ul.thumbs li a { text-decoration: none; color: black; }
 dl {
 	margin: 0 auto;
 	max-width: 400pt;
+	text-align: left;
 }
-dl > dd { display: inline-block; }
-dl > dt { display: inline-block; }
+dl > dd { margin-left: 100pt; }
+dl > dt { min-width: 100pt; float: left; clear: left; }
 
 .impl { display: none; }
 .copy { font-size: 75%; color: #bbb; margin-top: 24pt; }
