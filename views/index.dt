@@ -76,6 +76,9 @@ block body
 		dt: a(href="https://github.com/s-ludwig/SDLite") SDLite
 		dd Lightweight and fast parser/generator implementation for D
 
+		dt: a(href="https://github.com/jahan-addison/SDL-dart") SDL-dart
+		dd An SDLang parser written in Dart (also usable in JavaScript with #[code dart2js])
+
 	h2 Data types
 	pre
 		code.
