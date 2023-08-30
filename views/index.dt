@@ -79,7 +79,7 @@ block body
 		dt: a(href="https://github.com/jahan-addison/SDL-dart") SDL-dart
 		dd An SDLang parser written in Dart (also usable in JavaScript with #[code dart2js])
 
-		dt: a(href="https://github.com/ellipticbit/SDLangNET")
+		dt: a(href="https://github.com/ellipticbit/SDLangNET") SDLangNET
 		dd An updated .NET fork of the original SDL.NET library
 
 	h2 Data types
