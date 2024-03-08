@@ -155,6 +155,7 @@ block body
 	h2 Tools
 
 	ul.links
+		li #[a(href="https://github.com/Pure-D/sdlfmt") Auto-formatter (standalone)]
 		li #[a(href="http://sdl4r.rubyforge.org/syntaxhighlighter_brush.html") SDLang HTML syntax highlighter]
 		li #[a(href="https://packagecontrol.io/packages/SDLang") Syntax highlighting plug-in] for #[a(href="http://www.sublimetext.com/") Sublime Text]
 		li #[a(href="https://atom.io/packages/sdlang") Syntax highlighting plug-in] for #[a(href="https://atom.io/") Atom]
