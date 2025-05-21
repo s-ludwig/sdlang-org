@@ -42,45 +42,73 @@ block body
 
 	h2 Implementations
 
-	ul.thumbs
+	ul.thumb-list
 		li
-			a(href="https://github.com/Abscissa/SDLang-D/")
-				img(src="images/d-logo.png", alt="D Logo", width=107, height=80)
-				.impl SDLang-D
-		li
-			a(href="https://github.com/Palmik/HDJ")
-				img(src="images/haskell-logo.png", alt="Haskell Logo", width=113, height=80)
-				.impl HDJ
-		li
-			a(href="https://github.com/ikayzo/SDL.NET")
+			.logo
 				img(src="images/net-logo.png", alt=".NET Logo", width=80, height=80)
-				.impl SDL.NET
+			.entries
+				.entry
+					a(href="https://github.com/ellipticbit/SDLangNET") SDLangNET
+					.description An updated .NET fork of the original SDL.NET library
+				.entry
+					a(href="https://github.com/ikayzo/SDL.NET") SDL.NET
+					.description The original .NET implementation of SDLang
 		li
-			a(href="https://github.com/ikayzo/SDL")
+			.logo
 				img(src="images/java-logo.png", alt="Java Logo", width=80, height=80)
-				.impl SDL
+			.entries
+				.entry
+					a(href="https://github.com/SingingBush/SDL") SingingBush/SDL
+					.description An up-to-date Java fork of the original SDL library
+				.entry
+					a(href="https://github.com/ikayzo/SDL") ikayzo/SDL
+					.description The original Java implementation of SDLang
 		li
-			a(href="https://github.com/noccylabs/php-sdl")
+			.logo
+				img(src="images/c-logo.png", alt="C Logo", width=72, height=80)
+			.entries
+				.entry
+					a(href="https://github.com/code-disaster/libsdlang") libsdlang
+					.description C implementation of an SDLang parser using a Ragel based state machine
+		li
+			.logo
+				img(src="images/d-logo.png", alt="D Logo", width=107, height=80)
+			.entries
+				.entry
+					a(href="https://github.com/s-ludwig/SDLite") SDLite
+					.description A fast and lightweight parser/generator implementation
+				.entry
+					a(href="https://github.com/Abscissa/SDLang-D/") SDLang-D
+					.description The first parser/generator implementation for D
+		li
+			.logo
 				img(src="images/php-logo.png", alt="PHP Logo", width=115, height=80)
-				.impl SDLang-D
+			.entries
+				.entry
+					a(href="https://github.com/noccylabs/php-sdl") php-sdl
+					.description PHP implementation of a parser/generator
 		li
-			a(href="https://github.com/ikayzo/SDL.rb")
+			.logo
 				img(src="images/ruby-logo.png", alt="Ruby Logo", width=80, height=80)
-				.impl SDL.rb
+			.entries
+				.entry
+					a(href="https://github.com/ikayzo/SDL.rb") SDL.rb
+					.description Ruby version of the original SDLang implementation
+		li
+			.logo
+				img(src="images/dart-logo.png", alt="Dart Logo", width=80, height=80)
+			.entries
+				.entry
+					a(href="https://github.com/jahan-addison/SDL-dart") SDL-dart
+					.description An SDLang parser written in Dart (also usable in JavaScript with #[code dart2js])
+		li
+			.logo
+				img(src="images/haskell-logo.png", alt="Haskell Logo", width=113, height=80)
+			.entries
+				.entry
+					a(href="https://github.com/Palmik/HDJ") HDJ
+					.description A parser implementation for Haskell
 
-	h3 More implementations
-	dl
-		dt: a(href="https://github.com/SingingBush/SDL") SingingBush/SDL
-		dd An up-to-date Java fork of the original SDL library
-
-		dt: a(href="https://github.com/s-ludwig/SDLite") SDLite
-		dd Lightweight and fast parser/generator implementation for D
-
-		dt: a(href="https://github.com/jahan-addison/SDL-dart") SDL-dart
-		dd An SDLang parser written in Dart (also usable in JavaScript with #[code dart2js])
-
-		dt: a(href="https://github.com/ellipticbit/SDLangNET") SDLangNET
-		dd An updated .NET fork of the original SDL.NET library
 
 	h2 Data types
 	pre

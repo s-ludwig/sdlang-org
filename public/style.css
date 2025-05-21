@@ -56,10 +56,19 @@ code .att { color: #8AF;}
 code .cmt { color: #908880; }
 
 ul.links { list-style: none; padding: 0; }
+
 ul.thumbs { max-width: 500pt; margin: 0 auto; padding: 0; }
 ul.thumbs li { list-style: none; display: inline-block; margin: 12pt 12pt; font-size: 22pt; }
 ul.thumbs li img { vertical-align: middle; }
 ul.thumbs li a { text-decoration: none; color: black; }
+
+ul.thumb-list { max-width: 500pt; margin: 0 auto; padding: 0; }
+ul.thumb-list li { list-style: none; display: grid; margin: 12pt 12pt; font-size: 11pt; grid-template-columns: 132px auto; }
+ul.thumb-list li img { vertical-align: middle; display: block; }
+ul.thumb-list li a { text-decoration: none; color: black; font-weight: bold; }
+ul.thumb-list li .logo {}
+ul.thumb-list li .entries { text-align: left; vertical-align: top; }
+ul.thumb-list li .description { display: inline; margin-left: 10pt; }
 
 
 dl {
@@ -70,7 +79,6 @@ dl {
 dl > dd { margin-left: 100pt; }
 dl > dt { min-width: 100pt; float: left; clear: left; }
 
-.impl { display: none; }
 .copy { font-size: 75%; color: #bbb; margin-top: 24pt; }
 .footnotes { font-size: 75%; color: #bbb; }
 .footnote { font-size: 60%; vertical-align: super; }
