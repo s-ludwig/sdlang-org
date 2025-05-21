@@ -1,10 +1,11 @@
+import vibe.core.core;
 import vibe.http.fileserver;
 import vibe.http.router;
 import vibe.http.server;
 import core.time : days;
 
 
-shared static this()
+void main()
 {
 	auto fssettings = new HTTPFileServerSettings;
 	fssettings.maxAge = 7.days;
@@ -17,6 +18,8 @@ shared static this()
 	settings.port = 8010;
 	settings.bindAddresses = ["127.0.0.1"];
 	listenHTTP(settings, router);
+
+	runApplication();
 }
 
 void getHome(scope HTTPServerRequest req, scope HTTPServerResponse res)
