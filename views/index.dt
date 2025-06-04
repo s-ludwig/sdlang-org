@@ -169,7 +169,7 @@ block body
 			<span class="tag">title</span> <span class="str">"Some title"</span>; <span class="tag">author</span> <span class="str">"Peter Parker"</span>
 
 			<span class="cmt">// Tags may contain certain non-alphanumeric characters</span>
-			<span class="tag">this-is_a.valid$tag-name</span>
+			<span class="tag">this-is.1_valid$Tag-Name</span>
 
 			<span class="cmt">// Namespaces are supported</span>
 			<span class="tag">renderer:options</span> <span class="str">"invisible"</span>
